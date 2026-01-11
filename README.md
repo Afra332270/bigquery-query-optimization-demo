@@ -1,4 +1,4 @@
-# bigquery-query-optimization-demo
+# bigquery-cost-optimization-demo
 
 ## Introduction
 
