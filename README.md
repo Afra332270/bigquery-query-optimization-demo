@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The goal of this project is to demonstrate how BigQuery optimization techniques partitioning and clustering can help reduce query costs and improve performance when compared to querying regular, unpartitioned tables. For this experiment, I used the [Google Trends International Top Terms dataset](https://console.cloud.google.com/marketplace/details/google/trends) from BigQuery Public Datasets.
+The goal of this project is to demonstrate how BigQuery optimization techniques partitioning and clustering can help reduce query costs and improve performance when compared to querying regular, unpartitioned tables. For this experiment, I used the 'bigquery-public-data.google_trends.international_top_terms' from BigQuery Public Datasets.
 
 
 ## Experiment Overview
