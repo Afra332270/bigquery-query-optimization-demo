@@ -33,6 +33,9 @@ Slots contribute to parallelism while workers help with exchanging data.
 
 ## Results and Observations
 
-After creating both the partitioned ![Unpartitioned query stats](screenshots/unpartitioned_table.png) and unpartitioned tables, 
+After creating both the partitioned and unpartitioned tables, we can see that the slot tie consumed is lower for the partitioned table than the unpartitioned table.
+After running the same query on both the unpartitioned and partitioned tables, we can see that both the elapsed time and slot time consumed was lower for the partitioned table than the unpartitioned table.
+
+For the partitioned and clustered table, I ran two queries. The first query gave a much lower slot time compared to previous queries, since clustering can further reduce the number of data scanned. For the second query, both the slot time and elapsed time is higher. This is because the partition filter requires to check multiple partitions and aggregation (due to GROUP BY and COUNT(*)) results in shuffling. However, even though the second query increases costs, the costs would have been much higher without partitioning and clustering.
 
 
